@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h2>User Registration Form</h2>
+    <form id="registrationForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="text" id="mobileNumber" name="mobileNumber" required>
+
+        <label for="email">Email ID:</label>
+        <input type="text" id="email" name="emailId" required>
+
+        <label>Address:</label>
+        <input type="text" id="street" name="street" placeholder="Street" required>
+        <input type="text" id="city" name="city" placeholder="City" required>
+        <input type="text" id="state" name="state" placeholder="State" required>
+        <input type="text" id="country" name="country" placeholder="Country" required>
+
+        <label for="loginId">Login ID:</label>
+        <input type="text" id="loginId" name="loginId" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{6,}$" required>
+
+        <button type="submit">Save</button>
+        <a href="signin.html" class="signin-link">Sign In</a>
+    </form>
+   
+
+
+    <a href="https://node-js-task-1.onrender.com/api/user">Get All Users</a>
+    <script src="script.js"></script>
+</body>
+
+</html>
